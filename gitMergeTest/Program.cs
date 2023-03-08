@@ -2,15 +2,7 @@
 
 namespace gitMergeTest
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Ruler ruler = new Ruler(10);
-            ruler.Run();
-        }
-    }
-
+    // { 2023.03.08 Ruler 클래스 코드 위치 변경 - Alpha
     public class Ruler
     {
         private const float ONE_INCH = 2.54f;
@@ -26,6 +18,16 @@ namespace gitMergeTest
         public void Run()
         {
             Console.WriteLine($"{this.Centimeter} cm는 {this.Inch} inch 입니다.");
+        }
+    }
+    // } 2023.03.08 Ruler 클래스 코드 위치 변경 - Alpha
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Ruler ruler = new Ruler(10);
+            ruler.Run();
         }
     }
 }
